@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juner16</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="min-navbar">
+        <div class="behållare">
+            <a class="min-logo" href="index.html">J16</a>
+
+            <img id="mobil-id" class="mobil-meny" src="images/menu.svg" alt="öpnna meny">
+
+            <nav>
+                <img id="mobil-stäng-id" class="mobil-meny-stäng" src="images/exit.svg" alt="stäng meny">
+
+                <ul class="bästa-nav">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="klienttekniker.html">Klienttekniker</a></li>
+                    <li><a href="projektmetodik.html">Projektmetodik</a></li>
+                    <li><a href="internet.html">Internet</a></li>
+                    <li class="nuvarande"><a href="tillgänglighet.html">Tillgänglighet</a></li>
+                    <li><a href="analys.html">Analys</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="min-hero-del">
+        <div class="behållare">
+            <div class="det-första-man-ser">
+                <p class="mini-info">information om </p>
+                <h1 class="stor-info">Agila utvecklingsmetoder och html kursen</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="källförteckning-del">
+        <div class="behållare">
+            <p> HTML står för HyperText Markup Language och är en av webbens grundläggande byggstenar tillsammans med
+                CSS
+                (Cascading Style Sheets) och Javascript. (Vad CSS och Javascript är kommer att besvaras i kommande
+                blogginlägg.) HTML utgör strukturen för alla internets webbsidor i form av rubriker, styckeindelning,
+                att särskilja visst innehåll från annat och liknande. Det går också att infoga bilder med HTML.
+
+                HTML är ett märkspråk och inte ett programmeringsspråk, eftersom HTML-kod endast har i uppgift att ge
+                struktur. För att ett språk ska få kallas programmeringsspråk behöver det finnas möjlighet att utföra
+                kommandon, vilket inte går med HTML.
+
+                Varför är det egentligen viktigt att strukturera webbsidor, kan man fråga sig. En stor anledning är för
+                att göra design och funktionalitet möjlig, vilket åstadkoms i ett samarbete mellan HTML och CSS
+                respektive HTML och Javascript. Om HTML utgör strukturen kan man säga att CSS utgör designen och
+                Javascript funktionaliteten på en webbsida.
+
+                För att kunna göra alla rubriker på en webbsida röda behövs en struktur i HTML-koden som gör det möjligt
+                att särskilja rubrikerna från övrigt innehåll. På samma sätt är det med funktionalitet. För att kunna få
+                ett pop-up-fönster att dyka upp när man klickar på en knapp på en webbsida, behöver den knappen märkas
+                ut i HTML-koden.
+
+                En annan anledning till varför det är viktigt att strukturera webbsidor är att strukturen används av
+                sökmotorer. Att det här blogginlägget har rubriken "Vad är HTML", vilket är märkt i HTML-koden, låter
+                sökmotorer förstå att det här blogginlägget handlar om HTML och lägger alltså större vikt vid det än vid
+                det andra innehållet.</p>
+        </div>
+    </section>
+
+    <section class="agila-del">
+        <div class="behållare">
+            <p>
+                Ordet agile betyder "lättrörlig" eller "vig".
+                Agile Software Development (eller kort
+                "Agile") är ett synsätt gemensamt för en
+                grupp av lättrörliga metoder. Grundtanken
+                med Agila metoder är att i en föränderlig
+                värld krävs utvecklingsmetoder som hanterar
+                förändring som en del av verkligheten, inte
+                sådana som blundar för förändringar eller som
+                försöker reglera bort dem. Fler regler kommer
+                inte ge oss fler lyckade projekt. Vi behöver
+                flexibilitet - inte rigididet.
+
+                Agila metoder kan alltså sägas vara ett
+                paraply-begrepp. Det är inte en
+                systemutvecklings-metodik i sig utan snarare
+                en uppsättning värderingar, attityder och
+                principer. Inom de agila metoderna finns ett
+                antal olika utvecklings-metodiker som anses
+                vara lättrörliga. En metod anses vara agil då
+                metodikens upphovsman bekänner sig till de
+                agila värderingarna.
+            </p>
+
+        </div>
+    </section>
+
+
+
+    <script>
+        const mobileBtn = document.getElementById('mobil-id')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobil-stäng-id');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+
+</html>

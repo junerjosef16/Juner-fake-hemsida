@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap"); //Jag gjorde en temafärg så jag slipper byta vissa enstaka
+:root {
+  --temafärg: #ce4b23;
+}
+
+body {
+  background-image: radial-gradient(
+    circle 1920px at 1.2%,
+    rgb(167, 54, 243) 0%,
+    rgb(0, 68, 255) 97.5%
+  );
+  margin: 0;
+  font-family: "maven pro";
+}
+
+.min-navbar {
+  padding: 1em;
+
+  .min-logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 2em;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .behållare {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .mobil-meny {
+    cursor: pointer;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 6em;
+  padding-bottom: 3px;
+}
+
+.min-hero-del {
+  text-align: center;
+  .stor-info {
+    color: white;
+  }
+  .html-bild {
+    max-width: 20%;
+    height: auto;
+  }
+  .css-bild {
+    max-width: 20%;
+    height: auto;
+  }
+  .js-bild {
+    max-width: 20%;
+    height: auto;
+  }
+}
+
+.det-första-man-ser {
+  .mini-info {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.3em;
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1.3em;
+    margin-top: 0.2em;
+  }
+}
+
+section.källförteckning-del {
+  margin: 0;
+  padding-bottom: 2px;
+  p {
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    height: auto;
+    padding: 2em;
+    margin: auto;
+    letter-spacing: 0.1em;
+  }
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+  }
+}
+
+section.agila-del {
+  margin: 0;
+  padding-top: 20px;
+  p {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    height: auto;
+    padding: 1em;
+    margin: auto;
+    letter-spacing: 0.1em;
+  }
+}
+
+ul.källförteckning-lista {
+  margin: 2em;
+  padding-left: 0.1em;
+  display: grid;
+  text-align: center;
+
+  li {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+  }
+  a {
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+  }
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 30%;
+  right: 0;
+  top: 0;
+  background-image: radial-gradient(
+    circle 1920px at 1.2%,
+    rgb(167, 54, 243) 0%,
+    rgb(0, 68, 255) 97.5%
+  );
+  height: 100vh;
+  padding: 17em;
+
+  ul.bästa-nav {
+    margin-top: 20px;
+  }
+
+  li {
+    a {
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      font-size: 20px;
+      text-align: center;
+      margin: 1em;
+      padding-left: 3em;
+      padding-bottom: 1px;
+    }
+  }
+}
+
+.mobil-meny-stäng {
+  float: right;
+  margin: -260px;
+  cursor: pointer;
+  position: relative;
+  margin-top: -250px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobil-meny,
+  .mobil-meny-stäng {
+    display: none;
+  }
+
+  .min-navbar .behållare {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  .min-navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+    ul {
+      display: flex;
+    }
+
+    a {
+      color: rgb(206, 206, 206);
+      font-size: 1em;
+      padding: 0.1em 1em;
+    }
+
+    ul.bästa-nav {
+      margin: 0;
+    }
+
+    li.nuvarande a {
+      font-weight: bolder;
+      color: #ffffff;
+    }
+  }
+}

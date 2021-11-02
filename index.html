@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juner16</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="min-navbar">
+        <div class="behållare">
+            <a class="min-logo" href="index.html">J16</a>
+
+            <img id="mobil-id" class="mobil-meny" src="images/menu1.svg" alt="öpnna meny">
+
+            <nav>
+                <img id="mobil-stäng-id" class="mobil-meny-stäng" src="images/exit.svg" alt="stäng meny">
+                <ul class="bästa-nav">
+                    <li class="nuvarande"><a href="index.html">Hem</a></li>
+                    <li><a href="klienttekniker.html">Klienttekniker</a></li>
+                    <li><a href="projektmetodik.html">Projektmetodik</a></li>
+                    <li><a href="internet.html">Internet</a></li>
+                    <li><a href="tillgänglighet.html">Tillgänglighet</a></li>
+                    <li><a href="analys.html">Analys</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="min-hero-del">
+        <div class="behållare">
+            <div class="det-första-man-ser">
+                <p class="mini-info">information om </p>
+                <h1 class="stor-info">Agila utvecklingsmetoder och html</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WjwEh15M5Rw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        const mobileBtn = document.getElementById('mobil-id')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobil-stäng-id');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+
+</html>

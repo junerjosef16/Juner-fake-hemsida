@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juner16</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="min-navbar">
+        <div class="behållare">
+            <a class="min-logo" href="index.html">J16</a>
+
+            <img id="mobil-id" class="mobil-meny" src="images/menu1.svg" alt="öpnna meny">
+
+            <nav>
+                <img id="mobil-stäng-id" class="mobil-meny-stäng" src="images/exit.svg" alt="stäng meny">
+
+                <ul class="bästa-nav">
+                    <li><a href="index.html">Hem</a></li>
+                    <li class="nuvarande"><a href="klienttekniker.html">Klienttekniker</a></li>
+                    <li><a href="projektmetodik.html">Projektmetodik</a></li>
+                    <li><a href="internet.html">Internet</a></li>
+                    <li><a href="tillgänglighet.html">Tillgänglighet</a></li>
+                    <li><a href="analys.html">Analys</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="min-hero-del">
+        <div class="behållare">
+            <div class="det-första-man-ser">
+                <p class="mini-info">Information om </p>
+                <h1 class="stor-info">Klienttekniker</h1>
+                <img class="html-bild" src="images/html.svg" alt="html-bild">
+                <img class="css-bild" src="/images/css.svg" alt="css-bild">
+                <img class="js-bild" src="/images/js.png" alt="js-bild">
+            </div>
+        </div>
+    </section>
+
+    <section class="källförteckning-del">
+        <div class="behållare">
+
+            <h1>HTML</h1>
+            <p> HTML står för HyperText Markup Language och är en av webbens grundläggande byggstenar tillsammans med
+                CSS
+                (Cascading Style Sheets) och Javascript. (Vad CSS och Javascript är kommer att besvaras i kommande
+                blogginlägg.) HTML utgör strukturen för alla internets webbsidor i form av rubriker, styckeindelning,
+                att särskilja visst innehåll från annat och liknande. Det går också att infoga bilder med HTML.
+
+                HTML är ett märkspråk och inte ett programmeringsspråk, eftersom HTML-kod endast har i uppgift att ge
+                struktur. För att ett språk ska få kallas programmeringsspråk behöver det finnas möjlighet att utföra
+                kommandon, vilket inte går med HTML.
+            </p>
+            <h1 class="rubrik-info">CSS</h1>
+            <p>
+                CSS står för Cascading Style Sheets och är en av webbens tre grundläggande byggstenar tillsammans med
+                HTML och Javascript. Man kan säga att CSS är webbens ansikte utåt, och sköter alltså allt som har med
+                design att göra. Med hjälp av CSS kan man åstadkomma allt från att välja typsnitt på text till att göra
+                snygga animationer.
+            </p>
+            <h1 class="rubrik-info">JAVASCRIPT</h1>
+            <p>
+                Javascript är en av webbens tre grundläggande byggstenar tillsammans med HTML och CSS. Om HTML utgör
+                strukturen och CSS designen, kan man säga att Javascript utgör funktionaliteten på internets webbsidor.
+                Numera kan enkla animationer åstadkommas med hjälp av CSS, men generellt är det Javascript som möjliggör
+                allt som "händer" på en webbsida. Exempel på saker som händer kan vara att någonting ändras när man
+                klickar på en knapp, att ett formulär visar att jag har fyllt i mitt personnummer i fel format, eller
+                att någonting rör på sig eller ändras på hemsidan.
+
+                En vanlig missuppfattning är att Java och Javascript är samma sak, vilket inte stämmer. Båda är
+                programmeringsspråk, men de är relativt väsensskilda vad gäller hur de används.
+            </p>
+
+
+    </section>
+
+
+
+
+
+    <script>
+        const mobileBtn = document.getElementById('mobil-id')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobil-stäng-id');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+
+</html>
